@@ -1,0 +1,58 @@
+.section-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.eye-image{
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 0;
+}
+
+.section1-title{
+    font-size: 30px;
+    padding-top: 0;
+}
+
+.section1{
+    background-color: #f2f2f2;
+    margin: 20px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.template-container{
+    display: flex;
+}
+.template{
+    margin: 20px;
+    padding: 15px;
+    width: 300px;
+    border: 1px dashed black;
+    border-radius: 8px;
+    background-color: bisque;
+}
+
+.template-image{
+   
+    height: 50px;
+   
+}
+
+.template-title{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 600px){
+
+
+
+}

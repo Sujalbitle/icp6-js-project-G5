@@ -1,111 +1,134 @@
-.section-container{
+body {
+    background-color: #2b2626;
+}
+
+.section-container {
     display: flex;
     justify-content: space-around;
 }
 
-.eye-image{
+.eye-image {
     height: 60px;
     display: block;
     margin: 0 auto;
     padding-bottom: 0;
 }
 
-.section1-title{
+.section1-title {
     font-size: 30px;
     padding-top: 0;
+    color: #1aa090;
 }
 
-.section1{
-    background-color: #f2f2f2;
+.font-white {
+    color: white;
+    text-align: center;
+}
+
+.section1 {
+    background-color: white;
     margin: 20px;
     width: 400px;
-    border: 1px solid black;
+    border: 2px solid #1aa090;
     border-radius: 10px;
     padding: 10px;
 }
 
-.text-center{
-    text-align: center;
+.section1:hover .section1-title {
+    transform: translateY(-50%);
+    transition: transform 0.3s ease-in-out;
+    
 }
 
-.template-container{
+.section1:hover p {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.text-center {
+    text-align: center;
+    color: black;
+}
+
+.template-container {
     display: flex;
 }
-.template{
+
+.template {
     margin: 20px;
     padding: 15px;
     width: 300px;
     border: 1px dashed black;
     border-radius: 8px;
-    background-color: bisque;
+    background-color: #C5FFF8;
+
 }
 
-.template-image{
-   
+.template-image {
+
     height: 50px;
-   
+
 }
 
-.template-title{
+.template-title {
     font-weight: bold;
     font-size: 24px;
 }
 
-/* Existing CSS */
 
-/* Media Query for devices up to 600px */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     .section-container {
-        flex-direction: column; /* Adjusting flex direction for smaller screens */
-        align-items: center; /* Aligning items to the center */
+        flex-direction: column;
+        align-items: center;
     }
 
     .section1 {
-        width: 90%; /* Adjusting width to fit smaller screens */
-        margin: 10px; /* Adjusting margin */
+        width: 90%;
+        margin: 10px;
     }
 
     .template-container {
-        flex-direction: column; /* Adjusting flex direction for smaller screens */
-        align-items: center; /* Aligning items to the center */
+        flex-direction: column;
+        align-items: center;
     }
 
     .template {
-        width: 90%; /* Adjusting width to fit smaller screens */
-        margin: 10px; /* Adjusting margin */
+        width: 90%;
+        margin: 10px;
     }
 
     .template-title {
-        font-size: 20px; /* Decreasing font size for smaller screens */
+        font-size: 20px;
     }
 
     .eye-image {
-        height: 40px; /* Adjusting height for smaller screens */
+        height: 40px;
     }
 
-    /* Add any additional adjustments needed for smaller screens */
+
 }
-/* Existing CSS */
 
-/* Media Query for devices between 601px and 800px */
-@media screen and (min-width: 601px) and (max-width: 800px){
+
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
     .section1 {
-        width: 300px; /* Adjusting width for medium-sized screens */
-        margin: 15px; /* Adjusting margin */
+        width: 300px;
+        margin: 15px;
     }
 
     .template {
-        width: 250px; /* Adjusting width for medium-sized screens */
-        margin: 15px; /* Adjusting margin */
+        width: 250px;
+        margin: 15px;
     }
 
     .template-title {
-        font-size: 20px; /* Decreasing font size for medium-sized screens */
+        font-size: 20px;
     }
 
     .eye-image {
-        height: 50px; /* Adjusting height for medium-sized screens */
+        height: 50px;
     }
 
-    /* Add any additional adjustments needed for screens in this size range */
+
 }

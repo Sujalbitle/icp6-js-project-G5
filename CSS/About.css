@@ -51,8 +51,61 @@
     font-size: 24px;
 }
 
+/* Existing CSS */
+
+/* Media Query for devices up to 600px */
 @media screen and (max-width: 600px){
+    .section-container {
+        flex-direction: column; /* Adjusting flex direction for smaller screens */
+        align-items: center; /* Aligning items to the center */
+    }
 
+    .section1 {
+        width: 90%; /* Adjusting width to fit smaller screens */
+        margin: 10px; /* Adjusting margin */
+    }
 
+    .template-container {
+        flex-direction: column; /* Adjusting flex direction for smaller screens */
+        align-items: center; /* Aligning items to the center */
+    }
 
+    .template {
+        width: 90%; /* Adjusting width to fit smaller screens */
+        margin: 10px; /* Adjusting margin */
+    }
+
+    .template-title {
+        font-size: 20px; /* Decreasing font size for smaller screens */
+    }
+
+    .eye-image {
+        height: 40px; /* Adjusting height for smaller screens */
+    }
+
+    /* Add any additional adjustments needed for smaller screens */
+}
+/* Existing CSS */
+
+/* Media Query for devices between 601px and 800px */
+@media screen and (min-width: 601px) and (max-width: 800px){
+    .section1 {
+        width: 300px; /* Adjusting width for medium-sized screens */
+        margin: 15px; /* Adjusting margin */
+    }
+
+    .template {
+        width: 250px; /* Adjusting width for medium-sized screens */
+        margin: 15px; /* Adjusting margin */
+    }
+
+    .template-title {
+        font-size: 20px; /* Decreasing font size for medium-sized screens */
+    }
+
+    .eye-image {
+        height: 50px; /* Adjusting height for medium-sized screens */
+    }
+
+    /* Add any additional adjustments needed for screens in this size range */
 }

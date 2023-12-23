@@ -27,6 +27,44 @@
     scroll-behavior: smooth;
     font-family: 'Work Sans', sans-serif;
 }
+ /* Your existing styles */
+
+ @media only screen and (max-width: 600px) {
+    /* Styles for screens with a maximum width of 600px or smaller */
+
+    header {
+      padding: 15px 5%;
+    }
+
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .navbar a {
+      padding: 10px;
+    }
+
+    #menu-icon {
+      display: block;
+    }
+
+    .home-text h1 {
+      font-size: 2.5rem;
+    }
+
+    .bg-img {
+      min-height: 300px;
+      height: auto;
+      width: 100%;
+    }
+
+    .container {
+      max-width: 100%;
+    }
+
+    /* Add more styles for smaller screens as needed */
+  }
 :root{
     --h1-font: 5rem;
     --h2-font: 2.9rem;
@@ -243,6 +281,7 @@ display: flex;
         margin-left: 15px;
         padding-bottom: 10px;
     }
+    
     .button {
   background-color: #04AA6D; /* Green */
   border: none;
@@ -530,7 +569,7 @@ display: flex;
         <div class="home-text">
             <h1>
                 Your House is Waiting For You....!
-            </h1>
+            </h1>`
             
 
         </div>

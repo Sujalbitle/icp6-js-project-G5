@@ -1,15 +1,751 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home-page</title>
-  <link rel="stylesheet" href="./css/career.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Home - A Real Esatate Company </title>
+    <link rel="stylesheet" href="career.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <meta name="title" content="Dream Home - A Real Esatate Company">
+    <meta name="description" content="This is a realestate  buy and sell website ">
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- box-icon links  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style:none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Work Sans', sans-serif;
+}
+:root{
+    --h1-font: 5rem;
+    --h2-font: 2.9rem;
+    --p-font: 1.1rem;
+
+    --bg-color: #121b25;
+    --text-color: #ffffff;
+    --main-color: #1aa090;
+    --other-color: #d6d6d6;
+    
+}
+body{
+    background-color: var(--bg-color) ;
+    color: var(--text-color);
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: transparent;
+    padding: 30px 10%;
+    transition: all .50s ease;
+}
+.logo img{
+    height:50px;
+    width: auto;
+}
+.navbar{
+    display: flex;
+
+}
+.navbar a{
+    padding: 10px 25px;
+    font-size: var(--p-font);
+    font-weight: 400;
+    color: var(--other-color);
+    transition: all .40s ease;
+}
+.navbar a:hover{
+    color: var(--text-color);
+
+}
+.h-btn{
+     display: flex;
+     align-self: center;
+}
+.h-btn2{
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: all .40s ease;
+}
+.h-btn1{
+    color: var(--other-color);
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 10px;
+
+}
+.h-btn2:hover{
+    transform:translateX(-7px);
+}
+#menu-icon{
+    color: var(--text-color);
+    font-size: 36px;
+    margin-left: 8px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+.home-text{
+    color: #14ad3f;
+    text-align: center;
+}
+.jpg{
+    height: 600px;
+    width: 1400px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+.form{
+  box-shadow: 1px 1px 10px 0 #f3f3f4;
+}
+.bg-img {
+  /* The image used */
+  background-image: url("./../images/ca.jpg");
+
+  /* Control the height of the image */
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 45px;
+  height: 600px;
+    width: 1400px;
+    margin-left: 40px;
+
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  left: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.img1{
+    height: 140px;
+    width: 282px;
+    padding-left: 2px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.txt{
+    text-align: center;
+    text-shadow: #d6d6d6;
+    color: #3700ff;
+    padding-top: 2px;
+    
+}
+
+.head{
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: double;
+    text-transform: uppercase;
+    color: hwb(0 99% 1%);
+    text-shadow: #1a1a1a;
+    color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.card {
+ width: 300px;
+ height: 250px;
+ background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+ border-radius: 20px;
+ transition: all .3s;
+ margin-top: 35px;
+ margin-left: 50px;
+ display: inline-block;
+}
+
+.card2 {
+ width: 300px;
+ height: 250px;
+ background-color: #1a1a1a;
+ border-radius:;
+ transition: all .2s;
+}
+
+.card2:hover {
+ transform: scale(0.98);
+ border-radius: 18px;
+}
+
+.card:hover {
+ box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}.ca{
+display: flex;
+    }
+    .awsm-job-specification-wrapper{
+        margin-left: 15px;
+        padding-bottom: 10px;
+    }
+    .button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 5px;
+  margin: 10px 5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #04AA6D;
+  border-radius: 12px;
+}
+@font-face {
+  font-family: head;
+  src: url(../fonts/normal.ttf);
+}
+
+@font-face {
+  font-family: para;
+  src: url(../fonts/paragraph.ttf);
+}
+
+/* @font-face {
+  font-family: foot;
+  src: url(../fonts/normal.ttf);
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  margin-top: 1vh;
+  /* background-color: #000; */
+  font-family: foot;
+  background-color: hwb(0 98% 1%);
+  color:#fff;
+  height: 450px;
+  width: 100%;
+  line-height: 3vw;
+  /* width: 5vw; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 5vw;
+}
+
+.address {
+  position: relative;
+  right: 2.4vw;
+}
+
+.address p {
+  font-size: 2vw;
+  width: 30vw;
+  font-family: para;
+}
+
+
+.address h1 {
+  font-size: 1.2vw;
+  line-height: 1.5vw;
+  font-weight: 00;
+  margin-bottom: 1vw;
+}
+
+.address .social-icon i {
+  font-size: 2.5vw;
+  margin: 0vw 1.5vw;
+  color: #040404;
+
+}
+
+.address i:hover {
+  background-color: #BBD0FF;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.footer a {
+  font-weight: 600;
+  font-size: 1.5vw;
+  color: #0c0c0c;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.footer a:hover {
+  border-bottom: 2px solid #8f01ff;
+  scale: 0.88;
+}
+
+.quicklinks,
+.usefulllinks,
+.newsletter {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.usefulllinks {
+  position: relative;
+  left: 1.5vw;
+}
+
+.footer h1 {
+  font-size: 2vw;
+  color: #757cb2;
+  display: inline-block;
+}
+
+.newsletter {
+  position: relative;
+  left: 3vw;
+}
+
+.newsletter h3 {
+  color: linear-gradient(to right, #da291c, #8f01ff);
+  font-weight: 500;
+  font-size: 2.4vw;
+  margin: 1vw 0;
+}
+
+.newsletter input {
+  font-size: 1.4vw;
+  padding: 1vw 2vw;
+  border: 1px solid #8f01ff;
+}
+
+
+
+@media (max-width: 600px) {
+
+  .footer {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .footer h1 {
+    display: block;
+    border: none;
+    margin: 5vw 0;
+  }
+
+  .address h1 {
+    display: block;
+    border: none;
+    margin: 5vw 0;
+    font-size: 10vw;
+    line-height: 10vw;
+  }
+
+  .address p {
+    font-size: 6vw;
+    line-height: 5vw;
+    width: 100%;
+  }
+
+  .address i {
+    font-size: 8vw;
+    padding-top: 4vw;
+  }
+
+  .quicklinks {
+    margin-top: 10vw;
+    display: block;
+  }
+
+  .quicklinks h1 {
+    font-size: 7vw;
+  }
+
+  .quicklinks a {
+    line-height: 1vw;
+    display: block;
+    margin: 5vw;
+    font-size: 4.5vw;
+    color: black;
+  }
+
+  .usefulllinks h1 {
+    font-size: 6vw;
+  }
+
+  .usefulllinks {
+
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+  }
+
+  .usefulllinks a {
+    margin-left: 4vw;
+    font-size: 4.5vw;
+  }
+
+  .newsletter {
+    margin-top: 3vw;
+  }
+
+  .newsletter h1 {
+    font-size: 7vw;
+  }
+
+  .newsletter h3 {
+    font-size: 3vw;
+    margin-bottom: 4vw;
+    margin-left: 3vw;
+  }
+
+  .newsletter input {
+    font-size: 4vw;
+    display: inline-block;
+
+  }
+
+
+  .newsletter button {
+    font-size: 5vw;
+  }
+
+
+  .newsletter button:hover {
+    scale: 1;
+
+    cursor: none;
+  }
+
+  .footer a:hover {
+    border-bottom: none;
+    scale: 1;
+  }
+
+
+  .address i:hover {
+    background-color: #000;
+    font-size: 8vw;
+    cursor: pointer;
+  }
+
+
+
+}
+    </style>
 </head>
-
 <body>
- <h1>career page </h1>
-</body>
+    <!-- header -->
+    <header>
+        <a href="#" class="logo">
+            <img src="./images/logo4.png" alt="">
+        </a>
+        <ul class="navbar">
+            <li> <a href="../index.html">Home</a></li>
+            <li> <a href="../About Us.html" >About Us</a></li>
+            <li> <a href="../But/Rent.html" >But/Rent</a></li>
+            <li> <a href="../Project.html" >Project</a></li>
+            <li> <a href="../Our Team.html" >Our Team</a></li>
+            <li> <a href="../Career.html" >Career</a></li>
+        </ul>
 
+        <div class="h-btn">
+            <a href="#" class="h-btn1">Login</a>
+            <a href="#" class="h-btn2">Sign Up</a>
+
+            <div class="bx bx-menu" id="menu-icon">
+
+            </div>
+        </div>
+
+    </header>
+    <!-- Home section -->
+    <section class="home">
+        <div class="home-text">
+            <h1>
+                Your House is Waiting For You....!
+            </h1>
+            
+
+        </div>
+    </section>
+
+<div class="form">
+    <div class="bg-img">
+        <form action="" onsubmit="event.preventDefault(); sConsole();" class="container">
+          <h1>confirm your job!</h1>
+          <label for="full name"><b>Full Name</b></label>
+          <input type="text" id="data" placeholder="Enter Full Name" name="data" required>
+
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" id="data1" placeholder="Enter Email" name="data1" required>
+      
+          <label for="psw"><b>Contact no/b></label>
+          <input type="number"  id="data2" placeholder="Enter Contct no" name="data2" required>
+
+          <label for="email"><b>linkdin Profile</b></label>
+          <input type="text"  id="data3" placeholder="Linkdin Profile Link" name="data3" required>
+
+
+          <label for="email"><b>years of Expirence</b></label>
+          <input type="number"  id="data4" placeholder="Enter no of Year" name="data4" required>
+
+          <label for="email"><b>Portfolio link</b></label>
+          <input type="text"  id="data5" placeholder=" Your Portfolio Link" name="data5" required>
+
+
+      
+          <button type="submit" class="btn" onclick="alert('all information correct')"  onClick="sConsole()"> continue</button>
+        </form>
+      </div>
+      </div>
+      <div>
+        <script>
+          function sConsole()
+           {
+            var data = document.getElementById("data");
+            console.log(data.value); 
+            var data = document.getElementById("data1");
+            console.log(data1.value);
+            var data = document.getElementById("data");
+            console.log(data2.value); 
+            var data = document.getElementById("data");
+            console.log(data3.value); 
+            var data = document.getElementById("data");
+            console.log(data4.value);
+            var data = document.getElementById("data");
+            console.log(data5.value);   // data is the element, and we want its value
+          }
+          //sConsole(); This would call it only on script load, which isn't what you want
+          </script>
+      
+        <h1 class="head"> JOB OFFER..!</h1>
+        </div>
+      <div class="ca">
+      <div class="card">
+        <div class="card2">
+            <img src="./../images/ca.jpg" class="img1">
+            <h2 class="txt">  Motion Designer	</h2>
+            <div class="awsm-job-specification-wrapper"><div class="awsm-job-specification-item awsm-job-specification-job-category">
+                <i class="awsm-job-icon-pencil"></i><span class="awsm-job-specification-term">All</span> <span class="awsm-job-specification-term">Product &amp; Design</span> </div><div class="awsm-job-specification-item awsm-job-specification-job-type"><i class="awsm-job-icon-pencil"></i><span class="awsm-job-specification-term">Full Time</span> </div><div class="awsm-job-specification-item awsm-job-specification-job-location"><i class="awsm-job-icon-tag"></i><span class="awsm-job-specification-term">Bengaluru</span> 
+                <span class="awsm-job-specification-term">Remote</span> </div></div>
+                <center>
+                <div class="button button1"><button> apply now</button></div></center>
+
+        </div>
+     
+      
+    </div>
+    <div class="ca">
+    <div class="card">
+      <div class="card2">
+        <img src="./../images/ca.jpg" class="img1">
+        <h2 class="txt">  AI Engineer</h2>
+        <div class="awsm-job-specification-wrapper"><div class="awsm-job-specification-item awsm-job-specification-job-category">
+            <i class="awsm-job-icon-pencil"></i><span class="awsm-job-specification-term">All</span> <span class="awsm-job-specification-term">Product &amp; Design</span> </div><div class="awsm-job-specification-item awsm-job-specification-job-type"><i class="awsm-job-icon-pencil"></i><span class="awsm-job-specification-term">Full Time</span> </div><div class="awsm-job-specification-item awsm-job-specification-job-location"><i class="awsm-job-icon-tag"></i><span class="awsm-job-specification-term">Bengaluru</span> 
+            <span class="awsm-job-specification-term">Remote</span> </div></div>
+            <center>
+              <div class="button button1"><button> apply now</button></div></center>
+
+      </div>
+    </div>
+    </div>
+    <div class="ca">
+        <div class="card">
+          <div class="card2">
+            <img src="./../images/ca.jpg" class="img1">
+            <h2 class="txt">  Account Manager,Sales	</h2>
+            <div class="awsm-job-specification-wrapper"><div class="awsm-job-specification-item awsm-job-specification-job-category">
+                <i class="awsm-job-icon-pencil"></i><span class="awsm-job-specification-term">All</span> <span class="awsm-job-specification-term">Product &amp; Design</span> </div><div class="awsm-job-specification-item awsm-job-specification-job-type"><i class="awsm-job-icon-pencil"></i><span class="awsm-job-specification-term">Full Time</span> </div><div class="awsm-job-specification-item awsm-job-specification-job-location"><i class="awsm-job-icon-tag"></i><span class="awsm-job-specification-term">Bengaluru</span> 
+                <span class="awsm-job-specification-term">Remote</span> </div></div>
+                <center>
+                  <div class="button button1"><button> apply now</button></div></center>
+
+          </div>
+        </div>
+        </div><div class="ca">
+            <div class="card">
+              <div class="card2">
+                <img src="./../images/ca.jpg" class="img1">
+                <h2 class="txt">  Full Stack Engineer	</h2>
+                <div class="awsm-job-specification-wrapper"><div class="awsm-job-specification-item awsm-job-specification-job-category">
+                    <i class="awsm-job-icon-pencil"></i><span class="awsm-job-specification-term">All</span> <span class="awsm-job-specification-term">Product &amp; Design</span> </div><div class="awsm-job-specification-item awsm-job-specification-job-type"><i class="awsm-job-icon-pencil"></i><span class="awsm-job-specification-term">Full Time</span> </div><div class="awsm-job-specification-item awsm-job-specification-job-location"><i class="awsm-job-icon-tag"></i><span class="awsm-job-specification-term">Bengaluru</span> 
+                    <span class="awsm-job-specification-term">Remote</span> </div></div>
+                    <center>
+                      <div class="button button1"><button> apply now</button></div></center>
+    
+              </div>
+            </div>
+            </div>
+</div>
+  <div class="ca">
+  <div class="card">
+    <div class="card2">
+        <img src="./../images/ca.jpg" class="img1">
+        <h2 class="txt">  Anlayst,Growth	</h2>
+        <div class="awsm-job-specification-wrapper"><div class="awsm-job-specification-item awsm-job-specification-job-category">
+            <i class="awsm-job-icon-pencil"></i><span class="awsm-job-specification-term">All</span> <span class="awsm-job-specification-term">Product &amp; Design</span> </div><div class="awsm-job-specification-item awsm-job-specification-job-type"><i class="awsm-job-icon-pencil"></i><span class="awsm-job-specification-term">Full Time</span> </div><div class="awsm-job-specification-item awsm-job-specification-job-location"><i class="awsm-job-icon-tag"></i><span class="awsm-job-specification-term">Bengaluru</span> 
+            <span class="awsm-job-specification-term">Remote</span> </div></div>
+            <center>
+              <div class="button button1"><button> apply now</button></div></center>
+
+    </div>
+ 
+  
+</div>
+<div class="ca">
+<div class="card">
+  <div class="card2">
+    <img src="./../images/ca.jpg" class="img1">
+    <h3 class="txt">  sales Development (ANZ)</h3>
+    <div class="awsm-job-specification-wrapper"><div class="awsm-job-specification-item awsm-job-specification-job-category">
+        <i class="awsm-job-icon-pencil"></i><span class="awsm-job-specification-term">All</span> <span class="awsm-job-specification-term">Product &amp; Design</span> </div><div class="awsm-job-specification-item awsm-job-specification-job-type"><i class="awsm-job-icon-pencil"></i><span class="awsm-job-specification-term">Full Time</span> </div><div class="awsm-job-specification-item awsm-job-specification-job-location"><i class="awsm-job-icon-tag"></i><span class="awsm-job-specification-term">Bengaluru</span> 
+        <span class="awsm-job-specification-term">Remote</span> </div></div>
+        <center>
+          <div class="button button1"><button> apply now</button></div></center>
+
+  </div>
+</div>
+</div>
+<div class="ca">
+    <div class="card">
+      <div class="card2">
+        <img src="./../images/ca.jpg" class="img1">
+        <h3 class="txt">  Manager Social Media Sretegy</h3>
+        <div class="awsm-job-specification-wrapper"><div class="awsm-job-specification-item awsm-job-specification-job-category">
+            <i class="awsm-job-icon-pencil"></i><span class="awsm-job-specification-term">All</span> <span class="awsm-job-specification-term">Product &amp; Design</span> </div><div class="awsm-job-specification-item awsm-job-specification-job-type"><i class="awsm-job-icon-pencil"></i><span class="awsm-job-specification-term">Full Time</span> </div><div class="awsm-job-specification-item awsm-job-specification-job-location"><i class="awsm-job-icon-tag"></i><span class="awsm-job-specification-term">Bengaluru</span> 
+            <span class="awsm-job-specification-term">Remote</span> </div></div>
+            <center>
+              <div class="button button1"><button> apply now</button></div></center>
+
+      </div>
+    </div>
+    </div><div class="ca">
+        <div class="card">
+          <div class="card2">
+            <img src="./../images/ca.jpg" class="img1">
+            <h3 class="txt"> Civil Engineer</h3>
+            <div class="awsm-job-specification-wrapper"><div class="awsm-job-specification-item awsm-job-specification-job-category">
+                <i class="awsm-job-icon-pencil"></i><span class="awsm-job-specification-term">All</span> <span class="awsm-job-specification-term">Product &amp; Design</span> </div><div class="awsm-job-specification-item awsm-job-specification-job-type"><i class="awsm-job-icon-pencil"></i><span class="awsm-job-specification-term">Full Time</span> </div><div class="awsm-job-specification-item awsm-job-specification-job-location"><i class="awsm-job-icon-tag"></i><span class="awsm-job-specification-term">Bengaluru</span> 
+                <span class="awsm-job-specification-term">Remote</span> </div></div>
+                <center>
+                  <div class="button button1"><button> apply now</button></div></center>
+
+          </div>
+        </div>
+        </div>
+</div>
+<div class="footer-main">
+
+  <div class="footer">
+
+    <div class="address">
+      <h1>Real E-State</h1>
+
+    </div>
+    <div class="quicklinks">
+      <h1>Quick links</h1>
+
+      <a href="./index.html">Home</a>
+      <a href="./about-us.html">About Us</a>
+      <a href="./But/Rent.html">But/Rent</a>
+      <a href="./Project.html">Project</a>
+      <a href="./Our Team.html">Our Team</a>
+      <a href="./Career.html">Career</a>
+      <a href="./Login.html">Login</a>
+      
+    </div>
+     &nbsp;&nbsp;
+    <div class="usefullinks">
+      <h1>Contact us</h1>
+        <br/>
+      <a href="./index.html">Email-info:-Real E-State431@gmail.com</a>
+      <br/>
+      <a href="./index.html">Phone no:-123-456-789</a>
+    </div>
+    <div>
+      <ul class="footer-icons">
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li> <a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li> <a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li> <a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+           <li> <a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+    </div>
+<script src="https://kit.fontawesome.com/90fb78d75b.js" crossorigin="anonymous"></script>
+
+
+
+    <!-- js file -->
+    <script src="Career.js">
+
+    </script>
+</body>
 </html>

@@ -138,13 +138,3 @@ section{
     top: 6px;
     right: 6px;
 }
-.home-img{
-    width: 540px;
-    height: 540px;
-}
-.home-img img{
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    
-}
